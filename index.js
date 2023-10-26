@@ -36,7 +36,6 @@ async function updateTopTracks(json) {
     gist = await octo.gists.get({
       gist_id,
     })
-    // console.log('update success!')
   } catch (error) {
     console.error(
       `spotify-box ran into an issue for getting your gist ${gist_id}:\n${error}`
